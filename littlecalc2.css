@@ -1,0 +1,75 @@
+/* estilo rosa bonito tipo tarjeta */
+body {
+  background: #ffe6f2;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculadora {
+  width: 300px;
+  background: #ffb6c1;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+h1 {
+  color: #ff1493;
+  margin: 0 0 12px 0;
+  font-size: 1.25rem;
+}
+
+/* pantalla */
+#pantalla {
+  width: 90%;
+  height: 44px;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 12px;
+  text-align: right;
+  background: #fff;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.06);
+  margin-bottom: 14px;
+}
+
+/* teclado en grid 4x4 */
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* botones */
+button {
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform .12s, background .12s;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+button:hover { transform: translateY(-2px); }
+
+.op { background: #ff7fb0; }   /* operadores */
+.eq { background: #ff4da6; }   /* igual */
+.boton-c { background: #ff3b7f; width: 100%; margin-top: 12px; padding: 12px; }
+
+/* resultado */
+.resultado {
+  margin-top: 12px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  color: #c2185b;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.04);
+}
