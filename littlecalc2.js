@@ -110,6 +110,10 @@ function ejecutaroperacion() {
   entrandoEn = "reiniciar";
 }
 
+//para declarar ariables de usa let var o const
+
+//con % en una division lo que se obtiene es el residuo
+
 
 function fnsalidasuma(rsultadosuma) {
     document.getElementById("resultado").innerHTML = 
