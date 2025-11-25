@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora Rosa</title>
+  <link rel="stylesheet" href="calcstyle.css" />
+</head>
+<body>
+  <div class="calculadora">
+    <h1>Mi Malculadora </h1>
+
+    <!-- pantalla (mostrará lo que se escribe) -->
+    <input  id="pantalla" type="text" readonly placeholder="0">
+
+    <!-- teclado numérico -->
+    <div class="teclado">
+      <button onclick="agregarNumero('7')">7</button>
+      <button onclick="agregarNumero('8')">8</button>
+      <button onclick="agregarNumero('9')">9</button>
+      <button class="op" onclick="seleccionarOperacion('dividir')">÷</button>
+
+      <button onclick="agregarNumero('4')">4</button>
+      <button onclick="agregarNumero('5')">5</button>
+      <button onclick="agregarNumero('6')">6</button>
+      <button class="op" onclick="seleccionarOperacion('multiplicar')">×</button>
+
+      <button onclick="agregarNumero('1')">1</button>
+      <button onclick="agregarNumero('2')">2</button>
+      <button onclick="agregarNumero('3')">3</button>
+      <button class="op" onclick="seleccionarOperacion('restar')">−</button>
+
+      <button onclick="agregarNumero('0')">0</button>
+      <button onclick="agregarNumero('.')">.</button>
+      <button class="eq" onclick="ejecutaroperacion()">=</button>
+      <button class="op" onclick="seleccionarOperacion('sumar')">+</button>
+      
+    </div>
+
+    <button class="boton-c" onclick="borrar()">C</button>
+    <button onclick="seleccionarOperacion()"> buscar1</button>
+    <button onclick="seleccionarOperacion()"> buscar2</button>
+    <button onclick="seleccionarOperacion()"> buscar3</button>
+
+
+    <!-- Tus inputs (opcional, ocultos o visibles) para mantener compatibilidad -->
+    <!-- Si quieres puedes ocultarlos con CSS; por ahora los dejo visibles para depurar -->
+    <input id="input1" type="hidden">
+    <input id="input2" type="hidden">
+    <select id="operacion" style="display:none">
+      <option value="sumar">sumar</option>
+      <option value="restar">restar</option>
+      <option value="multiplicar">multiplicar</option>
+      <option value="dividir">dividir</option>
+    </select>
+
+    <div id="resultado" class="resultado">Resultado aparecerá aquí 💫</div>
+
+  </div>
+
+  <script src="calculadora.js"></script>
+</body>
+</html>

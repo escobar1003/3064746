@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora y Búsqueda Interactiva</title>
+</head>
+<body>
+  <h1>Calculadora con Funciones y Switch Case</h1>
+
+  <!-- 📘 CALCULADORA -->
+  <input type="text" id="input1" placeholder="Primer valor">
+  <br>
+  <input type="text" id="input2" placeholder="Segundo valor">
+  <br>
+
+  <select id="operacion">
+    <option value="sumar">Sumar</option>
+    <option value="restar">Restar</option>
+    <option value="multiplicar">Multiplicar</option>
+  </select>
+
+  <button onclick="ejecutarOperacion()">Ejecutar Operación</button>
+
+  <div id="resultado" class="resultado" style="margin-top:10px;">Resultado aparecerá aquí...</div>
+
+  <hr>
+
+  <!-- 🔍 BUSCADOR -->
+  <h2>Búsqueda en Arreglos</h2>
+  <p>Lenguajes disponibles: JavaScript, Python, PHP, C++</p>
+  <p>Precios disponibles: 10, 20, 50, 80, 12</p>
+
+  <input type="text" id="valorBusqueda" placeholder="Escribe el lenguaje o número">
+  <br><br>
+
+  <button onclick="buscarLenguaje()">Buscar Lenguaje</button>
+  <button onclick="buscarIndice()">Buscar Índice</button>
+  <button onclick="buscarPrecio()">Buscar Precio ≥</button>
+
+  <div id="busqueda" style="margin-top:15px; font-weight:bold;">Aquí aparecerá el resultado...</div>
+
+  <!-- Archivo JavaScript externo -->
+  <script src="buscador.js"></script>
+</body>
+</html>
+

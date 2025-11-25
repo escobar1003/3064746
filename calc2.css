@@ -1,0 +1,88 @@
+body {
+  background-color: #ffe0ef;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculadora {
+  background: #ffd2e7;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 280px;
+}
+
+h2 {
+  color: #b40066;
+  margin-bottom: 15px;
+}
+
+#display {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border: 2px solid #ff80bf;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+button {
+  background-color: #ffb6d9;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #ff7fbf;
+  color: white;
+}
+
+.clear {
+  margin-top: 10px;
+  background-color: #ff4081;
+  color: white;
+  width: 100%;
+}
+
+#resultado {
+  margin-top: 10px;
+  background: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.busquedas {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.busquedas button {
+  background: #f3a9df;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.busquedas button:hover {
+  background: #f06ac2;
+  color: white;
+}
